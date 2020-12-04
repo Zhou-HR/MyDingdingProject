@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistentConfig">
+    <option name="historyConfigList">
+      <map>
+        <entry key="ding_account">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingAccountDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingAccount" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_account" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_account" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_assess_detail">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingAssessDetailDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingAssessDetail" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_assess_detail" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_assess_detail" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_assess_list">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingAssessListDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingAssessList" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_assess_list" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_assess_list" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_dep_detail">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingDepDetailDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingDepDetail" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_dep_detail" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_dep_detail" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_file_mediaid">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingFileMediaidDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingFileMediaid" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_file_mediaid" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_file_mediaid" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_schedular_log">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingSchedularLogDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingSchedularLog" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_schedular_log" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_schedular_log" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_send_log">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingSendLogDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingSendLog" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_send_log" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_send_log" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_send_user">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingSendUserDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingSendUser" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_send_user" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_send_user" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_travel_detail">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingTravelDetailDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingTravelDetail" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_travel_detail" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_travel_detail" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_travel_erp_dept">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingTravelErpDeptDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingTravelErpDept" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_travel_erp_dept" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_travel_erp_dept" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_travel_list">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingTravelListDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingTravelList" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_travel_list" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_travel_list" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_travel_org">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingTravelOrgDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingTravelOrg" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_travel_org" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_travel_org" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_travel_push_data_record">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingTravelPushDataRecordDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingTravelPushDataRecord" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_travel_push_data_record" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_travel_push_data_record" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="ding_user_detail">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingUserDetailDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingUserDetail" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="ding_user_detail" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="ding_user_detail" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="dingding_user">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="DingdingUserDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="DingdingUser" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="dingding_user" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="dingding_user" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="erp_orp">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="ErpOrpDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="ErpOrp" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="erp_orp" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="erp_orp" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="erp_orp_all">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="ErpOrpAllDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="ErpOrpAll" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="erp_orp_all" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="erp_orp_all" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="erp_zy">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="ErpZyDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="ErpZy" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="erp_zy" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="erp_zy" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="erp_zy_all">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="ErpZyAllDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="ErpZyAll" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="erp_zy_all" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="erp_zy_all" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="maycur_code">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="MaycurCodeDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="MaycurCode" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="maycur_code" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="maycur_code" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+        <entry key="t_user">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="TUserDao" />
+              <option name="daoPackage" value="generate" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="TUser" />
+              <option name="modelPackage" value="generate" />
+              <option name="name" value="t_user" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="id" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="tableName" value="t_user" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="generator" />
+            </Config>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="initConfig">
+      <map>
+        <entry key="initConfig">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
+              <option name="modelPackage" value="com.gdiot.entity" />
+              <option name="name" value="initConfig" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="projectFolder" value="$PROJECT_DIR$" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlPackage" value="mybatis.mapper" />
+            </Config>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

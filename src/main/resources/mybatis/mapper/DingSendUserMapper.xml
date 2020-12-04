@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gdiot.mapper.DingSendUserMapper">
+  <resultMap id="BaseResultMap" type="com.gdiot.entity.DingSendUser">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="client" jdbcType="VARCHAR" property="client" />
+    <result column="suiteId" jdbcType="VARCHAR" property="suiteid" />
+    <result column="appId" jdbcType="VARCHAR" property="appid" />
+    <result column="suiteKey" jdbcType="VARCHAR" property="suitekey" />
+    <result column="suiteSecret" jdbcType="VARCHAR" property="suitesecret" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, client, suiteId, appId, suiteKey, suiteSecret, create_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ding_account
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from ding_account
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.gdiot.entity.DingSendUser" useGeneratedKeys="true">
+    insert into ding_account (client, suiteId, appId, 
+      suiteKey, suiteSecret, create_time
+      )
+    values (#{client,jdbcType=VARCHAR}, #{suiteid,jdbcType=VARCHAR}, #{appid,jdbcType=VARCHAR}, 
+      #{suitekey,jdbcType=VARCHAR}, #{suitesecret,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.gdiot.entity.DingSendUser" useGeneratedKeys="true">
+    insert into ding_account
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="client != null">
+        client,
+      </if>
+      <if test="suiteid != null">
+        suiteId,
+      </if>
+      <if test="appid != null">
+        appId,
+      </if>
+      <if test="suitekey != null">
+        suiteKey,
+      </if>
+      <if test="suitesecret != null">
+        suiteSecret,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="client != null">
+        #{client,jdbcType=VARCHAR},
+      </if>
+      <if test="suiteid != null">
+        #{suiteid,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="suitekey != null">
+        #{suitekey,jdbcType=VARCHAR},
+      </if>
+      <if test="suitesecret != null">
+        #{suitesecret,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.gdiot.entity.DingSendUser">
+    update ding_account
+    <set>
+      <if test="client != null">
+        client = #{client,jdbcType=VARCHAR},
+      </if>
+      <if test="suiteid != null">
+        suiteId = #{suiteid,jdbcType=VARCHAR},
+      </if>
+      <if test="appid != null">
+        appId = #{appid,jdbcType=VARCHAR},
+      </if>
+      <if test="suitekey != null">
+        suiteKey = #{suitekey,jdbcType=VARCHAR},
+      </if>
+      <if test="suitesecret != null">
+        suiteSecret = #{suitesecret,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.gdiot.entity.DingSendUser">
+    update ding_account
+    set client = #{client,jdbcType=VARCHAR},
+      suiteId = #{suiteid,jdbcType=VARCHAR},
+      appId = #{appid,jdbcType=VARCHAR},
+      suiteKey = #{suitekey,jdbcType=VARCHAR},
+      suiteSecret = #{suitesecret,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
