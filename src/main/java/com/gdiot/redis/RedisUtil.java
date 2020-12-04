@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author ZhouHR
+ */
 @Component
 public class RedisUtil {
     private Logger LOGGER = LoggerFactory.getLogger(RedisUtil.class);
@@ -2259,7 +2262,7 @@ public class RedisUtil {
      */
     public static void returnResource(JedisPool jedisPool, Jedis jedis) {
         if (jedis != null) {
-            jedisPool.returnResource(jedis);
+            jedisPool.close();
         }
     }
 
