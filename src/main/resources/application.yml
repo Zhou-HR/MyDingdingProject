@@ -1,7 +1,7 @@
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/dingding-login?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://localhost:3306/my_dingding_project?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
     password: root
 
@@ -10,7 +10,7 @@ spring:
     port: 6379
 
 mybatis:
-  type-aliases-package: com.gdiot.ssm.entity
+  type-aliases-package: com.gdiot.entity
   config-locations: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
