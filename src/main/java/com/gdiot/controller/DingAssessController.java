@@ -5,10 +5,6 @@ import com.dingtalk.api.response.OapiFileUploadSingleResponse;
 import com.gdiot.entity.DingAssessDetailPo;
 import com.gdiot.entity.DingAssessPo;
 import com.gdiot.entity.DingFilePo;
-import com.gdiot.jdbc.JdbcErpOPRAll;
-import com.gdiot.jdbc.JdbcErpOPRView;
-import com.gdiot.jdbc.JdbcErpZYAll;
-import com.gdiot.jdbc.JdbcErpZYView;
 import com.gdiot.mapper.DingAssessMapper;
 import com.gdiot.service.AsyncService;
 import com.gdiot.service.IDingAssessService;
@@ -75,7 +71,6 @@ public class DingAssessController {
         System.out.println("accessToken-----" + accessToken + "\n");
 
         List<String> id_list = mDingDataAnalysis.getAssessListId(startTime, endTime, userId, accessToken);
-        //{"errcode":400003,"errmsg":"?????","request_id":"4wtru52mwu17"}
         System.out.println("id_list=" + id_list.toString());
 
         if (id_list != null && id_list.size() > 0) {
@@ -315,52 +310,4 @@ public class DingAssessController {
         return res.getBody();
     }
 
-    /**
-     * 按项目代码选择ORP
-     *
-     * @param params
-     * @return
-     */
-    @RequestMapping("/selectORPByProjCode")
-    public String selectORPByProjCode(@RequestBody Map<String, String> params) {
-        String proj_code = "";
-        String applyId = "";
-        String applyReasonType = "";
-        String auditResult = "";
-        if (params != null) {
-            if (params.containsKey("proj_code")) {
-                proj_code = params.get("proj_code");
-            }
-            if (params.containsKey("applyId")) {
-                applyId = params.get("applyId");
-            }
-            if (params.containsKey("applyReasonType")) {
-                applyReasonType = params.get("applyReasonType");
-            }
-            if (params.containsKey("auditResult")) {
-                auditResult = params.get("auditResult");
-            }
-        }
-        int result = JdbcErpOPRView.selectORPByProjCode(proj_code, applyId, applyReasonType, auditResult);
-        int result2 = JdbcErpZYView.selectZYByProjCode(proj_code, applyId, applyReasonType, auditResult);
-        return result + " " + result2;
-    }
-
-    @RequestMapping("/selectORPAll")
-    public String selectORPAll(@RequestBody Map<String, String> params) {
-        log.info("定时任务每天5点执行一次 selectORPAll start");
-        int result = JdbcErpOPRAll.selectORPAll();
-        log.info("selectORPAll result=" + result);
-        log.info("selectORPAll end");
-        return result + "";
-    }
-
-    @RequestMapping("/selectZYAll")
-    public String selectZYAll(@RequestBody Map<String, String> params) {
-        log.info("定时任务每天6点执行一次 selectZYAll start");
-        int result2 = JdbcErpZYAll.selectZYAll();
-        log.info("selectORPAll result2=" + result2);
-        log.info("selectZYAll end");
-        return result2 + "";
-    }
 }

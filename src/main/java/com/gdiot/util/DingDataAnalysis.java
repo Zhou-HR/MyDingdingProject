@@ -850,7 +850,6 @@ public class DingDataAnalysis {
 //			return jsonArr;
     }
 
-
     /**
      * 解析差旅数据表单
      *
@@ -871,15 +870,12 @@ public class DingDataAnalysis {
 
                     if ("省公司".equals(name) || "TextField-K4MIBYDS".equals(id)) {
                         mDingAssessDetailPo.setProvinceName(value);
-                    } else if ("申请事由类型".equals(name) || "DDMultiSelectField-K4MKUOJ7".equals(id)) {
-                        //出差天数
-
-                        //去掉头尾[" "]
-                        String reValue = value.substring(2, value.length() - 2);
+                    } else if ("申请事由类型".equals(name) || "DDMultiSelectField-K4MKUOJ7".equals(id)) {//出差天数
+                        String reValue = value.substring(2, value.length() - 2);//去掉头尾[" "]
                         mDingAssessDetailPo.setApplyReasonType(reValue);
-                    } else if ("地市".equals(name) || "TextField-K8R5ETLQ".equals(id)) {
+                    } else if ("地市".equals(name) || "TextField-K8R5ETLQ".equals(id)) {//
                         mDingAssessDetailPo.setCityName(value);
-                    } else if ("事业部".equals(name) || "TextField-K4MIBYDT".equals(id)) {
+                    } else if ("事业部".equals(name) || "TextField-K4MIBYDT".equals(id)) {//
                         mDingAssessDetailPo.setDepBizName(value);
                     } else if ("申请人".equals(name) || "TextField-K4MKUOJ3".equals(id)) {
                         mDingAssessDetailPo.setApplicantName(value);
@@ -936,8 +932,7 @@ public class DingDataAnalysis {
                         log.info("name: " + sub.getString("name") + "\n");
                         log.info("component_type: " + sub.getString("component_type") + "\n");
                         String component_type = sub.getString("component_type");
-                        if ("MoneyField".equals(component_type)) {
-                            //预估出差费用
+                        if ("MoneyField".equals(component_type)) {//预估出差费用
                             log.info("value: " + sub.getString("value") + "\n");
                             log.info("ext_value: " + sub.getString("ext_value") + "\n");
                             String value = sub.getString("value");
