@@ -9,10 +9,14 @@ import java.util.Date;
 public class DateUtil {
     /**
      * 判定当前时间是否空闲，能否发下行指令
+     *
+     * @param time
+     * @return
      */
     public static boolean ifCurrentTimeFree(long time) {
         boolean isFree = true;
-        long startTime = time + 30 * 60 * 1000;//毫秒
+        //毫秒
+        long startTime = time + 30 * 60 * 1000;
         long endTime = time + 33 * 60 * 1000;
         long currentTime = System.currentTimeMillis();
         if (currentTime <= endTime && currentTime >= startTime) {
@@ -29,7 +33,7 @@ public class DateUtil {
      * @return
      */
     public static String timeStamp2Date(String seconds, String format) {
-        if (seconds == null || seconds.isEmpty() || "null".equals(seconds)) {
+        if (null == seconds || seconds.isEmpty() || "null".equals(seconds)) {
             return "";
         }
         if (format == null || format.isEmpty()) {
@@ -97,14 +101,21 @@ public class DateUtil {
 
     public static void main(String[] args) {
         String timeStamp = timeStamp();
-        System.out.println("timeStamp=" + timeStamp); //运行输出:timeStamp=1470278082
-        System.out.println(System.currentTimeMillis());//运行输出:1470278082980
+
+        //运行输出:timeStamp=1470278082
+        System.out.println("timeStamp=" + timeStamp);
+
+        //运行输出:1470278082980
+        System.out.println(System.currentTimeMillis());
         //该方法的作用是返回当前的计算机时间，时间的表达格式为当前计算机时间和GMT时间(格林威治时间)1970年1月1号0时0分0秒所差的毫秒数
 
         String date = timeStamp2Date(timeStamp, "yyyy-MM-dd HH:mm:ss");
-        System.out.println("date=" + date);//运行输出:date=2016-08-04 10:34:42
+
+        //运行输出:date=2016-08-04 10:34:42
+        System.out.println("date=" + date);
 
         String timeStamp2 = date2TimeStamp(date, "yyyy-MM-dd HH:mm:ss");
-        System.out.println(timeStamp2);  //运行输出:1470278082
+        //运行输出:1470278082
+        System.out.println(timeStamp2);
     }
 }

@@ -2266,22 +2266,7 @@ public class RedisUtil {
         }
     }
 
-    // public static RedisUtil getRu() {
-    // return ru;
-    // }
-    //
-    // public static void setRu(RedisUtil ru) {
-    // RedisUtil.ru = ru;
-    // }
 
     public static void main(String[] args) {
-		/*JedisPool jedisPool = new JedisPool(null,"localhost",6379,100,"123456");
-		Jedis jedis = jedisPool.getResource();
-		//r.get("", RedisConstants.datebase4);
-		jedis.select(RedisConstants.datebase4);
-		Set<String> str =  jedis.keys("*");
-		for (String string : str) {
-			System.out.println(string);
-		}*/
     }
 }

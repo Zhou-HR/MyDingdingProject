@@ -8,12 +8,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingAccountDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingAccountMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingAccount" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_account" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -23,7 +23,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -32,12 +32,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingAssessDetailDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingAssessDetailMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingAssessDetail" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_assess_detail" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -47,7 +47,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -56,12 +56,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingAssessListDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingAssessListMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingAssessList" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_assess_list" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -71,7 +71,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -80,12 +80,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingDepDetailDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingDepDetailMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingDepDetail" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_dep_detail" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -95,7 +95,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -104,12 +104,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingFileMediaidDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingFileMediaidMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingFileMediaid" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_file_mediaid" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -119,7 +119,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -128,12 +128,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingSchedularLogDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingSchedularLogMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingSchedularLog" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_schedular_log" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -143,7 +143,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -152,12 +152,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingSendLogDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingSendLogMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingSendLog" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_send_log" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -167,7 +167,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -176,12 +176,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingSendUserDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingSendUserMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingSendUser" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_send_user" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -191,7 +191,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -200,12 +200,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingTravelDetailDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingTravelDetailMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingTravelDetail" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_travel_detail" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -215,7 +215,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -224,12 +224,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingTravelErpDeptDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingTravelErpDeptMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingTravelErpDept" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_travel_erp_dept" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -239,7 +239,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -248,12 +248,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingTravelListDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingTravelListMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingTravelList" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_travel_list" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -263,7 +263,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -272,12 +272,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingTravelOrgDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingTravelOrgMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingTravelOrg" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_travel_org" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -287,7 +287,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -296,12 +296,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingTravelPushDataRecordDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingTravelPushDataRecordMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingTravelPushDataRecord" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_travel_push_data_record" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -311,7 +311,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -320,12 +320,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingUserDetailDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingUserDetailMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingUserDetail" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="ding_user_detail" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -335,7 +335,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -344,12 +344,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="DingdingUserDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="DingdingUserMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="DingdingUser" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="dingding_user" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -359,7 +359,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -368,12 +368,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="ErpOrpDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="ErpOrpMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="ErpOrp" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="erp_orp" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -383,7 +383,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -392,12 +392,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="ErpOrpAllDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="ErpOrpAllMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="ErpOrpAll" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="erp_orp_all" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -407,7 +407,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -416,12 +416,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="ErpZyDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="ErpZyMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="ErpZy" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="erp_zy" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -431,7 +431,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -440,12 +440,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="ErpZyAllDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="ErpZyAllMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="ErpZyAll" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="erp_zy_all" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -455,7 +455,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -464,12 +464,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="MaycurCodeDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="MaycurCodeMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="MaycurCode" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="maycur_code" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -479,7 +479,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>
@@ -488,12 +488,12 @@
             <Config>
               <option name="comment" value="true" />
               <option name="daoMvnPath" value="src/main/java" />
-              <option name="daoName" value="TUserDao" />
-              <option name="daoPackage" value="generate" />
-              <option name="daoPostfix" value="Dao" />
+              <option name="daoName" value="TUserMapper" />
+              <option name="daoPackage" value="com.gdiot.mapper" />
+              <option name="daoPostfix" value="Mapper" />
               <option name="modelMvnPath" value="src/main/java" />
               <option name="modelName" value="TUser" />
-              <option name="modelPackage" value="generate" />
+              <option name="modelPackage" value="com.gdiot.entity" />
               <option name="name" value="t_user" />
               <option name="overrideJava" value="true" />
               <option name="overrideXML" value="true" />
@@ -503,7 +503,7 @@
               <option name="useLombokPlugin" value="true" />
               <option name="useSchemaPrefix" value="true" />
               <option name="xmlMvnPath" value="src/main/resources" />
-              <option name="xmlPackage" value="generator" />
+              <option name="xmlPackage" value="mybatis.mapper" />
             </Config>
           </value>
         </entry>

@@ -1,20 +1,36 @@
 package com.gdiot.mapper;
 
-import com.gdiot.entity.DingAccount;
+
+import com.gdiot.entity.DingAccountPo;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * @author ZhouHR
  */
+@Mapper
+@Component
 public interface DingAccountMapper {
-    int deleteByPrimaryKey(Integer id);
+    /**
+     * @param mDingAccountPo
+     * @return
+     */
+    int insertOne(DingAccountPo mDingAccountPo);
 
-    int insert(DingAccount record);
+    /**
+     * @param client
+     * @return
+     */
+    int countAccountList(@Param("client") String client);
 
-    int insertSelective(DingAccount record);
-
-    DingAccount selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(DingAccount record);
-
-    int updateByPrimaryKey(DingAccount record);
+    /**
+     * @param client
+     * @param limit
+     * @param offset
+     * @return
+     */
+    List<DingAccountPo> selectAccountList(@Param("client") String client, @Param("limit") int limit, @Param("offset") int offset);
 }

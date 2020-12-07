@@ -65,20 +65,30 @@ import java.util.Map;
 @Slf4j
 public class HttpClientUtil {
 
-    //连接池最大连接数
+    /**
+     * 连接池最大连接数
+     */
     private final static Integer MAX_TOTAL = 500;
 
-    //路由最大连接数
+    /**
+     * 路由最大连接数
+     */
     private final static Integer MAX_PER_ROUTE = 500;
 
-    //连接建立后数据传输超时时长
-    private final static Integer socketTimeout = 35000;
+    /**
+     * 连接建立后数据传输超时时长
+     */
+    private final static Integer SOCKET_TIMEOUT = 35000;
 
-    // 建立连接超时时长
-    private final static Integer connectTimeout = 35000;
+    /**
+     * 建立连接超时时长
+     */
+    private final static Integer CONNECT_TIMEOUT = 35000;
 
-    //建立请求超时时长
-    private final static Integer connectionRequestTimeout = 35000;
+    /**
+     * 建立请求超时时长
+     */
+    private final static Integer CONNECTION_REQUEST_TIMEOUT = 35000;
 
     private final static String DEFAULT_CHARSET = "UTF-8";
 
@@ -171,7 +181,6 @@ public class HttpClientUtil {
 
         log.info("开始调用接口,接口地址[{}],参数[{}]", url, paramslist.toString());
         String resultStr = excute(new HttpGet(url), charset);
-//		log.info("结束调用接口,接口地址[{}],参数[{}],返回结果[{}]",url,paramslist.toString(),resultStr);
         return resultStr;
     }
 
@@ -182,16 +191,14 @@ public class HttpClientUtil {
             String json = gson.toJson(paramsMap);
             StringEntity s = new StringEntity(json.toString(), "UTF-8");
             s.setContentEncoding(charset);
-            s.setContentType("application/json");//发送json数据需要设置contentType
+            //发送json数据需要设置contentType
+            s.setContentType("application/json");
             httpPost.setEntity(s);
         } catch (Exception e) {
-//			log.error("UrlEncodedFormEntity转换字符异常,{}",e.getMessage());
             System.out.println("e.getMessage()-----" + e.getMessage());
             return e.getMessage();
         }
         log.info("开始调用接口,接口地址[{}],参数[{}]", url, paramsMap.toString());
-//		System.out.println("开始调用接口,接口地址[{}],参数[{}]-----" + url);
-//		System.out.println("开始调用接口,接口地址[{}],参数[{}]-----" + paramsMap.toString());
         String resultStr = excute(httpPost, charset);
         log.info("结束调用接口,接口地址[{}],参数[{}],返回结果[{}]", url, paramsMap.toString(), resultStr);
         return resultStr;
@@ -209,7 +216,8 @@ public class HttpClientUtil {
             String json = gson.toJson(paramsMap);
             StringEntity s = new StringEntity(json.toString(), "UTF-8");
             s.setContentEncoding(charset);
-            s.setContentType("application/json");//发送json数据需要设置contentType
+            //发送json数据需要设置contentType
+            s.setContentType("application/json");
             httpPost.setEntity(s);
         } catch (Exception e) {
             log.error("Exception,{}", e.getMessage());
@@ -218,7 +226,6 @@ public class HttpClientUtil {
 
         log.info("开始调用接口,接口地址[{}],headers[{}],参数[{}]", url, headers, paramsMap.toString());
         String resultStr = excute(httpPost, charset);
-//		log.info("结束调用接口,接口地址[{}],参数[{}],返回结果[{}]",url,paramsMap.toString(),resultStr);
         return resultStr;
     }
 
@@ -252,7 +259,6 @@ public class HttpClientUtil {
         }
         log.info("开始调用接口,接口地址[{}],参数[{}]", url, paramslist.toString());
         String resultStr = excute(httpPost, charset);
-//		log.info("结束调用接口,接口地址[{}],参数[{}],返回结果[{}]",url,paramslist.toString(),resultStr);
         return resultStr;
     }
 
@@ -281,7 +287,6 @@ public class HttpClientUtil {
         }
         log.info("开始调用接口,接口地址[{}],参数[{}]", url, paramslist.toString());
         String resultStr = excute(httpPost, charset);
-//		log.info("结束调用接口,接口地址[{}],参数[{}],返回结果[{}]",url,paramslist.toString(),resultStr);
         return resultStr;
     }
 
@@ -318,7 +323,6 @@ public class HttpClientUtil {
 
         log.info("开始调用接口,接口地址[{}],参数[{}]", url, paramStr);
         String resultStr = excute(httpPost, charset);
-//		log.info("结束调用接口,接口地址[{}],参数[{}],返回结果[{}]",url,paramStr,resultStr);
         return resultStr;
     }
 
@@ -383,9 +387,9 @@ public class HttpClientUtil {
     private static RequestConfig getRequestConfig() {
         //请求配置信息
         return RequestConfig.custom()
-                .setConnectionRequestTimeout(connectionRequestTimeout)
-                .setConnectTimeout(connectTimeout)
-                .setSocketTimeout(socketTimeout).build();
+                .setConnectionRequestTimeout(CONNECTION_REQUEST_TIMEOUT)
+                .setConnectTimeout(CONNECT_TIMEOUT)
+                .setSocketTimeout(SOCKET_TIMEOUT).build();
     }
 
     /**

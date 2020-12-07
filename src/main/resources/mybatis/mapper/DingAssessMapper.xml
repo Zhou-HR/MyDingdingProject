@@ -1,0 +1,103 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gdiot.mapper.DingAssessMapper">
+
+    <select id="selectDingAssess" resultType="com.gdiot.entity.DingAssessPo">
+		select dd_id,assess_list,start_time,end_time,create_time from ding_assess_list  
+		order by id desc 
+		limit #{offset} ,#{limit}
+	</select>
+    <select id="selectDingAssessCount" resultType="int">
+		select count(*) from ding_assess_list 
+	</select>
+
+    <insert id="insertDingAssess">
+		INSERT INTO ding_assess_list (dd_id,assess_list,start_time,end_time)
+		values (#{dd_id},#{assess_list},#{start_time},#{end_time})
+	</insert>
+
+    <insert id="insertDingAssessDetail">
+		INSERT INTO ding_assess_detail (ddId,assessId,auditStatus,auditResult,businessCode,businessType,depBizName,
+		provinceName,cityName,applyReasonType,applicantName,applicantPhone,
+		entrustOperator,projectCode,projectName,detail,deliveryTime,operatorRent,
+		colocationRent,procurementCost,projectCost,memo,update_time)
+		values 
+		(#{ddId},#{assessId},#{auditStatus},#{auditResult},#{businessCode},#{businessType},#{depBizName},
+		#{provinceName},#{cityName},#{applyReasonType},#{applicantName},#{applicantPhone},
+		#{entrustOperator},#{projectCode},#{projectName},#{detail},#{deliveryTime},#{operatorRent},
+		#{colocationRent},#{procurementCost},#{projectCost},#{memo},CURRENT_TIMESTAMP)
+	</insert>
+
+    <insert id="updateDingAssessDetail">
+	UPDATE ding_assess_detail
+			SET
+		ddId = #{ddId},
+		auditStatus = #{auditStatus},
+		auditResult = #{auditResult},
+		businessCode = #{businessCode},
+		businessType = #{businessType},
+		depBizName = #{depBizName},
+		provinceName = #{provinceName},
+		cityName = #{cityName},
+		applyReasonType = #{applyReasonType},
+		applicantName = #{applicantName},
+		applicantPhone = #{applicantPhone},
+		entrustOperator = #{entrustOperator},
+		projectCode = #{projectCode},
+		projectName = #{projectName},
+		detail = #{detail},
+		deliveryTime = #{deliveryTime},
+		operatorRent = #{operatorRent},
+		colocationRent = #{colocationRent},
+		procurementCost = #{procurementCost},
+		projectCost = #{projectCost},
+		memo = #{memo},
+		update_time = CURRENT_TIMESTAMP
+			WHERE assessId = #{assessId}
+	</insert>
+
+    <select id="selectDingAssessById" resultType="com.gdiot.entity.DingAssessDetailPo">
+		select * from ding_assess_detail t
+		WHERE assessId = #{assessId}
+	</select>
+
+    <!-- and auditResult='agree' pass -->
+    <select id="selectDingAssessDetailAgree" resultType="com.gdiot.entity.DingAssessDetailPo">
+		select * from ding_assess_detail t
+		WHERE t.update_time&gt;=FROM_UNIXTIME(#{beginTime}/1000 ,'%Y-%m-%d %H:%i:%s') 
+		AND  t.update_time&lt;=FROM_UNIXTIME(#{endTime}/1000,'%Y-%m-%d %H:%i:%s')  
+		AND auditResult='agree' AND auditStatus='COMPLETED'
+		order by t.update_time desc
+	</select>
+
+    <insert id="insertDingFileMediaId">
+		INSERT INTO ding_file_mediaid (fileName,fileSize,mediaId,time) values (#{fileName},#{fileSize},#{mediaId},#{time})
+	</insert>
+    <select id="selectDingFileMediaId" resultType="com.gdiot.entity.DingFilePo">
+		select * from ding_file_mediaid WHERE TO_DAYS(create_time) = TO_DAYS(NOW()) order by id desc 
+	</select>
+
+    <insert id="insertDingSendUser">
+		INSERT INTO ding_send_user (name,ddId,sendResult) values (#{name},#{ddId},#{sendResult})
+	</insert>
+
+    <update id="updateDingSendUser">
+		UPDATE ding_send_user 
+			SET
+			name = #{name}, 
+			ddId = #{ddId}, 
+			sendResult = #{sendResult},
+			update_time = CURRENT_TIMESTAMP 
+			WHERE
+			ddId = #{ddId}
+
+	</update>
+
+    <select id="selectDingSendUser" resultType="com.gdiot.entity.DingSendUserPo">
+		select * from ding_send_user where team=#{team}  order by id desc 
+	</select>
+
+    <insert id="insertDingSendLog">
+		INSERT INTO ding_send_log (name,ddId,fileName,sendResult) values (#{name},#{ddId},#{fileName},#{sendResult})
+	</insert>
+
+</mapper>
