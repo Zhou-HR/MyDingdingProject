@@ -4,8 +4,8 @@ import com.gdiot.util.DingDataAnalysis;
 import org.junit.Test;
 
 /**
- * @Author ZhouHR
- * @Date 2020/12/8
+ * @author ZhouHR
+ * @date 2020/12/8
  */
 public class DingDataAnalysisTest {
     @Test
