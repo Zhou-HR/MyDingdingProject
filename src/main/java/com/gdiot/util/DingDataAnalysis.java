@@ -12,30 +12,20 @@ import com.dingtalk.api.response.OapiProcessinstanceGetResponse.ProcessInstanceT
 import com.dingtalk.api.response.OapiProcessinstanceListidsResponse.PageResult;
 import com.dingtalk.api.response.OapiUserGetResponse.Roles;
 import com.gdiot.entity.*;
-import com.gdiot.jdbc.JdbcErpOPRView;
-import com.gdiot.jdbc.JdbcErpZYView;
 import com.gdiot.service.IDingAssessService;
 import com.gdiot.service.IDingDepDataService;
 import com.gdiot.service.IDingDingUserService;
-import com.gdiot.util.*;
 import com.taobao.api.ApiException;
 import com.taobao.api.FileItem;
 import com.taobao.api.internal.util.WebUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 对接钉钉的工具类
@@ -769,85 +759,6 @@ public class DingDataAnalysis {
             e.printStackTrace();
             return null;
         }
-    }
-
-    /**
-     * 获取所有改造审批单的列表
-     *
-     * @param accessToken
-     * @param params
-     */
-    public void getAllAssessList(String accessToken, Map<String, Object> params) {
-        if (mIDingDingUserService == null) {
-            mIDingDingUserService = SpringContextUtils.getBean(IDingDingUserService.class);
-        }
-        if (mIDingAssessService == null) {
-            mIDingAssessService = SpringContextUtils.getBean(IDingAssessService.class);
-        }
-
-        long endTime = System.currentTimeMillis();
-        long startTime = endTime - 24 * 60 * 60 * 1000;
-        if (params != null) {
-            if (params.containsKey("startTime")) {
-                startTime = (long) params.get("startTime");
-            }
-            if (params.containsKey("endTime")) {
-                endTime = (long) params.get("endTime");
-            }
-        }
-        log.info("startTime-----" + DateUtil.milliSecond2Date(String.valueOf(startTime), "yyyy-MM-dd HH:mm:ss"));
-        log.info("endTime-----" + DateUtil.milliSecond2Date(String.valueOf(endTime), "yyyy-MM-dd HH:mm:ss"));
-
-//			JSONArray jsonArr = new JSONArray();
-        List<DingDingUser> list = mIDingDingUserService.selectAllUserId();
-        for (DingDingUser user : list) {
-            String userId = null;
-            try {
-                userId = user.getDdId();
-            } catch (Exception e) {
-                log.info("e=" + e.toString());
-            }
-            if (userId != null) {
-                log.info("userId-----" + userId);
-                List<String> id_list = getAssessListId(startTime, endTime, userId, accessToken);
-                log.info("id_list=" + id_list.toString());
-                if (id_list != null && id_list.size() > 0) {
-                    DingAssessPo mDingAssessPo = new DingAssessPo();
-                    mDingAssessPo.setDd_id(userId);
-                    mDingAssessPo.setAssess_list(id_list.toString());
-                    mDingAssessPo.setStart_time(String.valueOf(startTime));
-                    mDingAssessPo.setEnd_time(String.valueOf(endTime));
-                    mIDingAssessService.insertDingAssess(mDingAssessPo);
-
-                    int list_size = id_list.size();
-                    for (int i = 0; i < list_size; i++) {
-                        String assessId = id_list.get(i);
-                        DingAssessDetailPo mDingAssessDetailPo = getAssessInstance(assessId, accessToken);
-                        if (mDingAssessDetailPo != null) {
-                            mIDingAssessService.insertDingAssessDetail(mDingAssessDetailPo);
-                        }
-                        String proj_code = mDingAssessDetailPo.getProjectCode();
-                        String applyId = mDingAssessDetailPo.getBusinessCode();
-                        String applyReasonType = mDingAssessDetailPo.getApplyReasonType();
-                        String auditResult = mDingAssessDetailPo.getAuditResult();
-                        String auditStatus = mDingAssessDetailPo.getAuditStatus();
-                        if ("agree".equals(auditResult) && "COMPLETED".equals(auditStatus)) {
-                            //审批通过的
-
-                            int result = JdbcErpOPRView.selectORPByProjCode(proj_code, applyId, applyReasonType, auditResult);
-                            int result2 = JdbcErpZYView.selectZYByProjCode(proj_code, applyId, applyReasonType, auditResult);
-                        }
-                    }
-                } else {
-                    continue;
-                }
-
-            } else {
-                continue;
-            }
-
-        }
-//			return jsonArr;
     }
 
     /**

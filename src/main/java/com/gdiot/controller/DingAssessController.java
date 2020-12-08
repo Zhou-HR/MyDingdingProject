@@ -65,7 +65,7 @@ public class DingAssessController {
                 endTime = Long.parseLong(params.get("endTime"));
             }
         }
-
+        System.out.println(startTime);
         DingDataAnalysis mDingDataAnalysis = new DingDataAnalysis();
         String accessToken = mDingDataAnalysis.getToken();
         System.out.println("accessToken-----" + accessToken + "\n");

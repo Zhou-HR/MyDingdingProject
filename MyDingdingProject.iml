@@ -146,5 +146,7 @@
     <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-core:2.1.7" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.54" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.13" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:2.2" level="project" />
   </component>
 </module>

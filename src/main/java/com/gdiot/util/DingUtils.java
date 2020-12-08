@@ -15,7 +15,7 @@ public class DingUtils {
     /**
      * 开票审批
      */
-    public static String processCode = "NEdgHk-LPatLQiNxfyQR2qx47_gdsk-Q23FpeFNeuwecLLWxqJDZc1P_js-UsFHE";
+    public static String processCode = "PROC-7CFF6983-C7BF-4F6B-9506-E5D54EE6B80E";
 
     public static String tokenURL = "https://oapi.dingtalk.com/gettoken";
 
