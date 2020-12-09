@@ -22,7 +22,6 @@ public class TestAction {
     private DingDingUserMapper dingDingUserMapper;
 
 
-
     @RequestMapping("/selectTbData")
     public List<DingDingUser> selectTbData() {
 

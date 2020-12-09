@@ -231,14 +231,14 @@ public class DingDingController {
         if (mDingDingUser != null) {
             mIDingDingUserService.insertDingDingUser(mDingDingUser);
 
-            //		LOGGER.info("mDingDingUser="+mDingDingUser);
             System.out.println("getDdId=" + mDingDingUser.getDdId() + "\n");
             System.out.println("getName=" + mDingDingUser.getName() + "\n");
             System.out.println("getEmail=" + mDingDingUser.getEmail() + "\n");
             System.out.println("getDept1=" + mDingDingUser.getDept1() + "\n");
             System.out.println("getPosition=" + mDingDingUser.getPosition() + "\n");
             System.out.println("getMobile=" + mDingDingUser.getMobile() + "\n");
-            System.out.println("getStartWorkDate=" + mDingDingUser.getStartWorkDate() + "\n");//入职时间
+            //入职时间
+            System.out.println("getStartWorkDate=" + mDingDingUser.getStartWorkDate() + "\n");
             System.out.println("getWorkNo=" + mDingDingUser.getWorkNo() + "\n");
             System.out.println("getPhone=" + mDingDingUser.getPhone() + "\n");
             System.out.println("getWorkLocation=" + mDingDingUser.getWorkLocation() + "\n");
@@ -294,14 +294,10 @@ public class DingDingController {
         LOGGER.info("getDep_id=" + mDingDepPo.getDep_id());
         LOGGER.info("getDep_name=" + mDingDepPo.getDep_name());
         LOGGER.info("getDep_detail=" + mDingDepPo.getDep_detail());
-//		LOGGER.info("getAutoAddUser="+mDingDepPo.getAutoAddUser());
         LOGGER.info("getCode=" + mDingDepPo.getCode());
-//		LOGGER.info("getCreateDeptGroup="+mDingDepPo.getCreateDeptGroup());
         LOGGER.info("getDeptManagerUseridList=" + mDingDepPo.getDeptManagerUseridList());
         LOGGER.info("getDeptPerimits=" + mDingDepPo.getDeptPerimits());
         LOGGER.info("getDeptPermits=" + mDingDepPo.getDeptPermits());
-//		LOGGER.info("getGroupContainSubDept="+mDingDepPo.getGroupContainSubDept());
-//		LOGGER.info("getOuterDept="+mDingDepPo.getOuterDept());
         LOGGER.info("getParentid=" + mDingDepPo.getParent_id());
         LOGGER.info("getUserPerimits=" + mDingDepPo.getUserPerimits());
         LOGGER.info("getUserPermits=" + mDingDepPo.getUserPermits());

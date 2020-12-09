@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * @author ZhouHR
+ */
 @Mapper
 @Component
 public interface ProductMapper {
