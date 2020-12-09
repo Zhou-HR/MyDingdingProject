@@ -1,0 +1,22 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gdiot.mapper.ProductMapper">
+    <!-- select * from tb_product order by id desc  limit #{offset} ,#{limit} -->
+    <select id="selectProductList" resultType="com.gdiot.entity.ProductPo">
+		select * from tb_product order by id desc 
+	</select>
+    <select id="selectProductCount" resultType="int">
+		select count(*) from tb_product 
+	</select>
+    <select id="selectProductCount" resultType="java.lang.Integer">
+
+    </select>
+
+    <insert id="insertProduct">
+		insert into tb_product 
+		(productName,productType,function,doFor,price,reward,productChief,productPic,productFile)
+		values (#{productName,jdbcType=VARCHAR},#{productType,jdbcType=VARCHAR},#{function,jdbcType=VARCHAR},#{doFor,jdbcType=VARCHAR},#{price,jdbcType=VARCHAR},
+		#{reward,jdbcType=VARCHAR},#{productChief,jdbcType=VARCHAR},#{productPic,jdbcType=VARCHAR},#{productFile,jdbcType=VARCHAR})
+	</insert>
+    <insert id="insertProduct"></insert>
+
+</mapper>
